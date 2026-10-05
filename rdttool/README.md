@@ -15,6 +15,7 @@ It will then procede to extract all the files from the .rdt files listed in the 
 ### Command Options
 
 rdttool filename
+
 rdttool [-hv]
 
 Options:
