@@ -538,7 +538,7 @@ void extract_rdt(std::string file_name)
         rda_file_position += 4;
     }
 
-    std::cout << "Number of files: " << std::dec << file_count << std::endl;
+    std::cout << "Number of files extracted: " << std::dec << file_count << std::endl;
 
     rda_file.close();
     rdr_file.close();
