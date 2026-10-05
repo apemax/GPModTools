@@ -543,6 +543,7 @@ void extract_rdt(std::string file_name)
     rda_file.close();
     rdr_file.close();
     rdi_file.close();
+    rdx_file.close();
 
     res_rdt_file.close();
     disk_one_rdt_file.close();
