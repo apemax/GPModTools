@@ -210,45 +210,12 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(res_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(res_rdt_file_contents[next_file_offset + 4]);
 
-                    if(res_rdt_file_name == "res.rdt")
-                    {
-                        out_file_name.insert(0, "res_rdt/file_");
-                        std::filesystem::path extract_directory("res_rdt");
+                    out_file_name.insert(0, "res_rdt/file_");
+                    std::filesystem::path extract_directory("res_rdt");
 
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
-                    }
-                    else if(res_rdt_file_name == "disk1.rdt")
+                    if(std::filesystem::exists(extract_directory) == false)
                     {
-                        out_file_name = "disk1_rdt/file_";
-                        std::filesystem::path extract_directory("disk1_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk1_rdt");
-                        }
-                    }
-                    else if(res_rdt_file_name == "disk2.rdt")
-                    {
-                        out_file_name = "disk2_rdt/file_";
-                        std::filesystem::path extract_directory("disk2_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk2_rdt");
-                        }
-                    }
-                    else
-                    {
-                        std::string out_file_name = "res_rdt/file_";
-                        std::filesystem::path extract_directory("res_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
+                        std::filesystem::create_directory("res_rdt");
                     }
 
                     std::string file_name_dot = ".";
@@ -359,45 +326,12 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(disk_one_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(disk_one_rdt_file_contents[next_file_offset + 4]);
 
-                    if(disk_one_rdt_file_name == "res.rdt")
-                    {
-                        out_file_name.insert(0, "res_rdt/file_");
-                        std::filesystem::path extract_directory("res_rdt");
+                    out_file_name = "disk1_rdt/file_";
+                    std::filesystem::path extract_directory("disk1_rdt");
 
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
-                    }
-                    else if(disk_one_rdt_file_name == "disk1.rdt")
+                    if(std::filesystem::exists(extract_directory) == false)
                     {
-                        out_file_name = "disk1_rdt/file_";
-                        std::filesystem::path extract_directory("disk1_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk1_rdt");
-                        }
-                    }
-                    else if(disk_one_rdt_file_name == "disk2.rdt")
-                    {
-                        out_file_name = "disk2_rdt/file_";
-                        std::filesystem::path extract_directory("disk2_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk2_rdt");
-                        }
-                    }
-                    else
-                    {
-                        std::string out_file_name = "res_rdt/file_";
-                        std::filesystem::path extract_directory("res_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
+                        std::filesystem::create_directory("disk1_rdt");
                     }
 
                     std::string file_name_dot = ".";
@@ -508,45 +442,12 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(disk_two_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(disk_two_rdt_file_contents[next_file_offset + 4]);
 
-                    if(disk_two_rdt_file_name == "res.rdt")
-                    {
-                        out_file_name.insert(0, "res_rdt/file_");
-                        std::filesystem::path extract_directory("res_rdt");
+                    out_file_name = "disk2_rdt/file_";
+                    std::filesystem::path extract_directory("disk2_rdt");
 
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
-                    }
-                    else if(disk_two_rdt_file_name == "disk1.rdt")
+                    if(std::filesystem::exists(extract_directory) == false)
                     {
-                        out_file_name = "disk1_rdt/file_";
-                        std::filesystem::path extract_directory("disk1_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk1_rdt");
-                        }
-                    }
-                    else if(disk_two_rdt_file_name == "disk2.rdt")
-                    {
-                        out_file_name = "disk2_rdt/file_";
-                        std::filesystem::path extract_directory("disk2_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("disk2_rdt");
-                        }
-                    }
-                    else
-                    {
-                        std::string out_file_name = "res_rdt/file_";
-                        std::filesystem::path extract_directory("res_rdt");
-
-                        if(std::filesystem::exists(extract_directory) == false)
-                        {
-                            std::filesystem::create_directory("res_rdt");
-                        }
+                        std::filesystem::create_directory("disk2_rdt");
                     }
 
                     std::string file_name_dot = ".";
