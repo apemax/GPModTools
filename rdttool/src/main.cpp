@@ -42,8 +42,8 @@ int main(int argc, char const *argv[])
         std::cout << "-h   Display this help." << std::endl;
         std::cout << std::endl;
         std::cout << "Example:" << std::endl;
-        std::cout << "Extract the files from res.rdt file:" << std::endl;
-        std::cout << "rdttool res.rdt" << std::endl;
+        std::cout << "Extract the files from all three .rdt files:" << std::endl;
+        std::cout << "rdttool res.rdr" << std::endl;
         std::cout << "Output the version of rdttool:" << std::endl;
         std::cout << "rdttool -v" << std::endl;
         }
