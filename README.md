@@ -5,3 +5,4 @@ GPModTools is a project aimed at creating open source modding tools for the PC v
 ## List of tools:
 
 * `RDTTool`: Extracts asset files from .rdt archive files.
+* `IMGtoBMP`: Converts .img files to .bmp files.
