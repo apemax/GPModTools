@@ -1,0 +1,3 @@
+# ignore obj and build directories
+**/obj
+**/build
