@@ -210,7 +210,7 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(res_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(res_rdt_file_contents[next_file_offset + 4]);
 
-                    out_file_name.insert(0, "res_rdt/file_");
+                    out_file_name.insert(0, "res_rdt/");
                     std::filesystem::path extract_directory("res_rdt");
 
                     if(std::filesystem::exists(extract_directory) == false)
@@ -219,8 +219,6 @@ void extract_rdt(std::string file_name)
                     }
 
                     std::string file_name_dot = ".";
-                    std::string file_name_underscore = "_";
-                    std::string file_name_number;
                     std::string file_extension;
                     std::vector<std::byte> file_extract(file_size);
 
@@ -228,10 +226,6 @@ void extract_rdt(std::string file_name)
                     {
                         file_extract[file_extract_counter] = res_rdt_file_contents[next_file_offset + 20 + file_extract_counter];
                     }
-
-                    file_name_number = std::to_string(rda_file_offset);
-                    out_file_name.append(file_name_number);
-                    out_file_name.append(file_name_underscore);
 
                     for(long unsigned int rdi_file_name_position = 69; rdi_file_name_position < 693959; rdi_file_name_position += 49)
                     {
@@ -326,7 +320,7 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(disk_one_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(disk_one_rdt_file_contents[next_file_offset + 4]);
 
-                    out_file_name = "disk1_rdt/file_";
+                    out_file_name = "disk1_rdt/";
                     std::filesystem::path extract_directory("disk1_rdt");
 
                     if(std::filesystem::exists(extract_directory) == false)
@@ -335,8 +329,6 @@ void extract_rdt(std::string file_name)
                     }
 
                     std::string file_name_dot = ".";
-                    std::string file_name_underscore = "_";
-                    std::string file_name_number;
                     std::string file_extension;
                     std::vector<std::byte> file_extract(file_size);
 
@@ -344,10 +336,6 @@ void extract_rdt(std::string file_name)
                     {
                         file_extract[file_extract_counter] = disk_one_rdt_file_contents[next_file_offset + 20 + file_extract_counter];
                     }
-
-                    file_name_number = std::to_string(rda_file_offset);
-                    out_file_name.append(file_name_number);
-                    out_file_name.append(file_name_underscore);
 
                     for(long unsigned int rdi_file_name_position = 69; rdi_file_name_position < 693959; rdi_file_name_position += 49)
                     {
@@ -442,7 +430,7 @@ void extract_rdt(std::string file_name)
                     file_size = (file_size << 8) + std::to_integer<int>(disk_two_rdt_file_contents[next_file_offset + 5]);
                     file_size = (file_size << 8) + std::to_integer<int>(disk_two_rdt_file_contents[next_file_offset + 4]);
 
-                    out_file_name = "disk2_rdt/file_";
+                    out_file_name = "disk2_rdt/";
                     std::filesystem::path extract_directory("disk2_rdt");
 
                     if(std::filesystem::exists(extract_directory) == false)
@@ -451,8 +439,6 @@ void extract_rdt(std::string file_name)
                     }
 
                     std::string file_name_dot = ".";
-                    std::string file_name_underscore = "_";
-                    std::string file_name_number;
                     std::string file_extension;
                     std::vector<std::byte> file_extract(file_size);
 
@@ -460,10 +446,6 @@ void extract_rdt(std::string file_name)
                     {
                         file_extract[file_extract_counter] = disk_two_rdt_file_contents[next_file_offset + 20 + file_extract_counter];
                     }
-
-                    file_name_number = std::to_string(rda_file_offset);
-                    out_file_name.append(file_name_number);
-                    out_file_name.append(file_name_underscore);
 
                     for(long unsigned int rdi_file_name_position = 69; rdi_file_name_position < 693959; rdi_file_name_position += 49)
                     {
