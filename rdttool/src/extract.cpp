@@ -275,6 +275,8 @@ void extract_rdt(std::string file_name)
 
                                 std::string file_extension_temp(file_extension_bytes.begin(), file_extension_bytes.end());
 
+                                std::transform(file_extension_temp.begin(), file_extension_temp.end(), file_extension_temp.begin(), ::tolower);
+
                                 file_extension = file_extension_temp;
                             }
                         }
@@ -385,6 +387,8 @@ void extract_rdt(std::string file_name)
 
                                 std::string file_extension_temp(file_extension_bytes.begin(), file_extension_bytes.end());
 
+                                std::transform(file_extension_temp.begin(), file_extension_temp.end(), file_extension_temp.begin(), ::tolower);
+
                                 file_extension = file_extension_temp;
                             }
                         }
@@ -494,6 +498,8 @@ void extract_rdt(std::string file_name)
                                 }
 
                                 std::string file_extension_temp(file_extension_bytes.begin(), file_extension_bytes.end());
+
+                                std::transform(file_extension_temp.begin(), file_extension_temp.end(), file_extension_temp.begin(), ::tolower);
 
                                 file_extension = file_extension_temp;
                             }
