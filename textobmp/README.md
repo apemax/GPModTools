@@ -2,6 +2,10 @@
 
 TEXtoBMP can convert all the .tex/.pal/.bmp texture files from the PC version of G-Police to .bmp files.
 
+### TODO
+
+* Some .tex/.pal/.bmp files aren't converting correctly. Needs further investigation.
+
 ## Usage
 
 To use TEXtoBMP copy the textobmp binary into the same directory as the extracted .tex/.pal/.bmp files you want to convert, Then run textobmp with the .tex file name:
