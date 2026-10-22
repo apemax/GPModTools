@@ -4,7 +4,7 @@ RDTTool can extract all the files from the .rdt archives for the PC version of G
 
 ## Usage
 
-To use RDTTool copy the rdtttool binary into the main G-Police game directory can contains all the game files, Then run rdttool with the .rdr fie name:
+To use RDTTool copy the rdtttool binary into the main G-Police game directory that contains all the game files, Then run rdttool with the .rdr file name:
 
 ~~~
 rdttool res.rdr
